@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(#fddbfd,#ffeeff,#ffcdff);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Header */
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero
+{
+    top:0;
+    left:0;
+    position: relative;
+    padding-bottom:20px;
+}
+
+.eng-med
+{
+    color:green;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: arial;
+    text-shadow: 0px 0px 5px #ffffff;
+    position: relative;
+    top:-15px;
+}
+
+.report-title
+{
+    color:rgb(196, 7, 7);
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    font-family: arial;
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px #ffffff;
+    position: relative;
+    top:-10px;
+}
+
+.session
+{
+    color:purple;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.logo
+{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top:-10px;
+    left:-10px;
+}
+
+.affiNo
+{
+    font-size:0.8rem;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+
+.affi-statement
+{
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: arial;
+    text-shadow: 0px 0px 5px white;
+    color:rgb(196, 7, 7);
+    position: relative;
+    top:-20px;
+}
+
+.school-name
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top:-50px;
+    font-size:3rem;
+    font-weight: bold;
+    color:rgb(196, 7, 7);
+    text-shadow: 0px 0px 5px white;
+}
+
+
+/* Student info. */
+
+.sch-no
+{
+    grid-area: sch_no;
+}
+
+.name
+{
+    margin-left:40px;
+    grid-area: sch_name;
+}
+
+.class
+{
+    grid-area: sch_class
+}
+
+.sec
+{
+    margin-left:40px;
+    grid-area: sch_sec;
+}
+
+.dob
+{
+    margin-left:40px;
+    grid-area: sch_dob;
+}
+
+.rollno
+{
+    margin-left:40px;
+    grid-area: sch_rollno;
+}
+
+.fatherName
+{
+    grid-area: sch_fname;
+}
+
+.motherName
+{
+    grid-area: sch_mname;
+}
+.student-info > *
+{
+    padding-top:5px;
+    padding-bottom:5px;
+    text-align: left;
+}
+.student-info
+{
+    font-weight:bold;
+    font-family: arial;
+    display: grid;
+    grid-template-areas:"sch_no sch_no sch_name sch_name"
+    "sch_class sch_sec sch_dob sch_rollno"
+    "sch_fname sch_fname sch_fname sch_fname"
+    "sch_mname sch_mname sch_mname sch_mname";
+    margin-bottom:10px;
+}
+
+/* Tables */
+table,th,td
+{
+    border:1px solid #000;
+    border-collapse: collapse;
+    padding:0.25rem;
+}
+
+#marks
+{
+    width: 85%;
+    margin-left:7.5%;
+}
+
+.subject
+{
+    text-align: left;
+    font-weight:bold;
+    font-family:arial;
+}
+
+#marks tr
+{
+    text-align: center;
+}
+
+.total-marks
+{
+    font-weight: bold;
+    font-family: arial;
+}
+
+#specs
+{
+    margin-top:2px;
+    width: 85%;
+    margin-left: 7.5%;
+    font-family:arial;
+}
+
+#specs th
+{
+    text-align: left;
+    padding:3px;
+    padding-right:5px;
+}
+
+#specs td
+{
+    text-align: center;
+    padding:6px;
+}
+
+input[type=checkbox]
+{
+    display: inline-block;
+    width:15px;
+    height: 15px;
+}
+
+/* Footer */
+
+.decorate
+{
+    display: inline-block;
+    border-bottom: 3px dotted black;
+}
+
+.reopen-line
+{
+    grid-area: reopen;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.2rem;
+}
+
+.sig
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cls-teacher
+{
+    grid-area:cls_tch;
+    
+}
+.cls-teacher > img
+{
+    width:50px;
+    height:50px;
+}
+
+.principal
+{
+    grid-area: sch_pr;
+}
+.principal > img
+{
+    width:100px;
+    height: 50px;
+}
+
+.loc
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area:loc;
+    color: white;
+    background: rgb(198, 3, 114);
+}
+
+footer
+{
+    padding-top: 3rem;
+    width:100%;
+    display: grid;
+    grid-template-areas: 
+    "reopen reopen"
+    "cls_tch sch_pr"
+    "loc loc";
+}
